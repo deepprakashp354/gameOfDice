@@ -1,0 +1,36 @@
+<html>
+    <head>
+    </head>
+    <body>
+        <!-- player board -->
+        <div id = "players"></div>
+
+        <!-- leader board -->
+        <div>
+            <h3>LeaderBoard</h3>
+            <table id = "leaderboard" border = 1 cellspacing = 0 width = "200">
+                <tr>
+                    <th>Player</th>
+                    <th>Score</th>
+                    <th>Rank</th>
+                </tr>
+            </table>
+        </div>
+
+        <!-- store -->
+        <script type = "text/javascript" src = "store.js"></script>
+
+        <!-- god implementation -->
+        <script type = "text/javascript" src = "diceGame.js"></script>
+
+        <!-- god implementation -->
+        <script>
+            // values
+            const maxRun = 20;
+            const numOfPlayers = 5;
+
+            g = new God(numOfPlayers, maxRun);
+            g.plotButtons();
+        </script>
+    </body>
+</html>
